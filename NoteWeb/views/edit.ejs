@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     
+    <div class=" main w-full min-h-screen bg-yellow-900">
+            <h1>edit success</h1>
+            <div class="mt-2  ms-3 p-1 w-35 h-10 bg-green-400 flex items-center rounded-lg"> <a href="/"> Go Back To Home</a></div>
+        <div class="form text-black ">
+            <form action="/edit" method="post" class="px-10 py-10 ">
+                <input class="block px-5 py-2 bg-white rounded-xl  outline-none w-svh" type="text" placeholder="Title"  name="previousname" value="<%=filename%>">
+                 <input class="block mt-4 px-5 py-2 bg-white rounded-xl outline-none w-svh" type="text" placeholder="Rename Title" name="newname">
+                 <input class="mt-2 bg-yellow-400 px-5 py-2 rounded-lg " type="submit" value="Update">
+                
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
