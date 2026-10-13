@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     
+     <div class=" main w-full min-h-screen bg-yellow-900">
+            <h1 class="text-white">read success</h1>
+            <div class="mt-2 ms-3 p-1 w-35 h-10 bg-green-400 flex items-center rounded-lg"> <a href="/"> Go Back To Home</a></div>
+        <div class="form text-black ">
+            <form action="" method="" class="px-10 py-10 ">
+                <h1 class="block px-5 py-2 bg-white rounded-xl outline-none w-svh" type="text" name="Title" value=""><%=filename%></h1>
+                 <p class="block mt-2 px-5 py-2  bg-white resize-none rounded-xl w-svh outline-none" name="Subject" id=""><%=filedata%></p>
+                 <div class="mt-2 w-35 h-10 bg-yellow-400 flex items-center p-5 rounded-lg"> <a href="/edit/<%=filename%>"> Edit FileName</a></div>
+                </form>
+        </div>
+    </div>   
+</body>
+</html>

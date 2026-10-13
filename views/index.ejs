@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+   
+<div class=" main w-full min-h-screen bg-yellow-900">
+        <h1 class=" text  bg-white"> hey</h1>
+        <div class="form text-black ">
+            <form action="/Creat" method="post" class="px-10 py-10 ">
+                <input class="block px-5 py-2 bg-white rounded-xl outline-none w-svh" type="text" placeholder="Title" name="Title">
+                <textarea class="block mt-2 px-5 py-2  bg-white resize-none rounded-xl w-svh outline-none" placeholder="Write your task" name="Subject" id=""></textarea>
+                <input class="mt-2 bg-green-400 px-5 py-2 rounded-lg " type="submit" value="Creat">
+               
+            </form>
+        </div>
+     <div class="task p-10 flex gap-3 flex-wrap">
+         <% if(file.length>0){ %>
+                 <% file.forEach(function(val){ %>
+            <div class="task px-3 py-4 bg-white rounded-md">
+                    <h1 class="text-3xl"> <%=val %></h1>
+                 <div class="flex gap-7 flex-wrap">
+                     <a class="text-blue-600 text-base" href="/File/<%=val %>">Readmore</a>
+                     <a class="text-black text-base" href="/edit/<%=val %>">Edite Filename</a>
+                     <a class="text-yellow-800 text-base" href="">Delete</a>
+                </div>
+            </div>
+           <% }) %>
+         <% }else{ %>
+            <h1 class=" text-white text-base">Task Not Created</h1>
+        <% } %>
+         </div>   
+    </div>
+    
+</body>
+</html>
