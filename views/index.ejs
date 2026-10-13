@@ -23,11 +23,11 @@
                  <% file.forEach(function(val){ %>
             <div class="task px-3 py-4 bg-white rounded-md">
                     <h1 class="text-3xl"> <%=val %></h1>
-                 <div class="flex gap-7 flex-wrap">
+                 <div class="flex gap-7 flex-wrap"></div>
                      <a class="text-blue-600 text-base" href="/File/<%=val %>">Readmore</a>
                      <a class="text-black text-base" href="/edit/<%=val %>">Edite Filename</a>
                      <a class="text-yellow-800 text-base" href="">Delete</a>
-                </div>
+                </div> 
             </div>
            <% }) %>
          <% }else{ %>
