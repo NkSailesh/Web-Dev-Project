@@ -1,0 +1,53 @@
+body{
+    background-color: yellow;
+}
+.main-box{
+   border: 3px  dotted rgb(14, 14, 14);
+   width: 400px; 
+   padding: 20px;
+   margin-top:90px ;
+   margin-left:20% ;
+   background-color: white;
+}
+.Text-List,.date{
+    height: 40px;
+    margin-right: 5px;
+    border:2px solid black;
+    border-radius: 4px;
+
+}
+
+.Add-list{
+    height: 40px;
+    width:70px ;
+    border-radius: 4px;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 20px;
+}
+.Listadd{
+       display:flex;
+       gap: 50px;
+       
+      
+}
+.Listadd1,.Listadd2{
+    margin-top: 10px;
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    text-align:center;
+    font-size: 20px;
+    border-radius: 6px;
+    
+}
+
+.delete-list-Bun{
+width: 100px;
+margin-bottom: 35px;
+background-color: brown;
+color: white;
+font-size: 20px;
+border-radius: 11px;
+cursor:pointer;
+}
