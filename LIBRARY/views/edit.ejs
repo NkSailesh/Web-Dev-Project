@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1>Edit your Book</h1>
+    <div class=" w-md h-full text-black p-1 ml-100" >
+        <form class=" grid " action="/update/<%=user._id %>" method="post">
+            <label for="">Book Image</label>
+            <input class="mb-1 border-2" type="file"  accept="Image/*"  name="Bookimage">
+             <label for="">Book Name</label>
+            <input class="mb-4 border-2" type="text" placeholder="BookName" name="BookName">
+             <label for="">Auther</label>
+            <input class="mb-4 border-2" type="text" placeholder="BookName" name="AuthorsName">
+            <label for="">Pages</label>
+            <input class=" border-2" type="number" placeholder="Print length" name="PrintLength" >
+            <label  for="">Publisher Name</label>
+            <input class="border-2" type="text" placeholder=" Publisher" name="Publisher">
+            <label for="">Publication Date</label>
+            <input class=" border-2" type="date" placeholder="Publication Date" name="PublicationDate">
+            <label for="">Language</label>
+            <input class=" border-2" type="text" placeholder=" Language" name="Language">
+            <label for="">ISBN-NO-10</label>
+            <input class=" border-2" type="number" placeholder="ISBN-NO-10" name="Isbn10">
+            <label for="">ISBN-NO-13</label>
+            <input class=" border-2" type="number" placeholder="ISBN-NO-13" name="Isbn13">
+            <label for="">Edition Book</label>
+            <input class=" border-2" type="text" placeholder="Edition" name="Edition">
+            <label for="">Book File</label>
+            <input  class=" border-2" type="file" accept="pdf" name="BookPdf">
+              
+            
+            <input class=" h-7 w-29 border-2 mt-3 flex justify-center rounded-sm" type="submit" value="Update
+              
+        </form>
+        <a class="  h-7 w-29 border-1  flex justify-center rounded-sm" href="/Own-Library">Go to Library</a>
+
+    </div>
+    
+</body>
+</html>

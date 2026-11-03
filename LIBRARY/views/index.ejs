@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1>add new book in your library</h1>
+    <div class=" w-md h-full text-black p-1 ml-100" >
+        <form class="grid" action="/create" method="post">
+             
+        </form>
+        <form class=" grid " action="/create" method="post" enctype="multipart/form-data" >
+           <label for="">Book Image</label>
+            <input class="mb-1 border-2" type="file" accept="image/*"   name="Bookimage">
+             <label for="">Book File</label>
+            <input  class=" border-2" type="file" accept="pdf" name="BookPdf">
+             <label for="">Book Name</label>
+            <input class="mb-4 border-2" type="text" placeholder="BookName" name="BookName">
+             <label for="">Auther</label>
+            <input class="mb-4 border-2" type="text" placeholder="BookName" name="AuthorsName">
+            <label for="">Pages</label>
+            <input class=" border-2" type="number" placeholder="Print length" name="PrintLength" >
+            <label  for="">Publisher Name</label>
+            <input class="border-2" type="text" placeholder=" Publisher" name="Publisher">
+            <label for="">Publication Date</label>
+            <input class=" border-2" type="date" placeholder="Publication Date" name="PublicationDate">
+            <label for="">Language</label>
+            <input class=" border-2" type="text" placeholder=" Language" name="Language">
+            <label for="">ISBN-NO-10</label>
+            <input class=" border-2" type="number" placeholder="ISBN-NO-10" name="Isbn10">
+            <label for="">ISBN-NO-13</label>
+            <input class=" border-2" type="number" placeholder="ISBN-NO-13" name="Isbn13">
+            <label for="">Edition Book</label>
+            <input class=" border-2" type="text" placeholder="Edition" name="Edition">
+           
+              
+            
+            <input class=" h-7 w-29 border flex justify-center rounded-sm" type="submit" placeholder="add to Library">
+                      
+              
+        </form>
+        <a class="  h-7 w-29 border flex justify-center rounded-sm" href="/Own-Library">Go to Library</a>
+
+    </div>
+    
+</body>
+</html>
